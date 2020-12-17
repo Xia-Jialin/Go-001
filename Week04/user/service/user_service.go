@@ -6,8 +6,13 @@ import (
 	"log"
 	"time"
 
+<<<<<<< HEAD
 	"github.com/Xia-Jialin/Go-000/Week04/user/dao"
 	"github.com/Xia-Jialin/Go-000/Week04/user/redis"
+=======
+	"github.com/cty898/Go-000/Week04/user/dao"
+	"github.com/cty898/Go-000/Week04/user/redis"
+>>>>>>> ee315abcb790869e30fe090de1f8ea2ef5d6413e
 	"github.com/jinzhu/gorm"
 )
 

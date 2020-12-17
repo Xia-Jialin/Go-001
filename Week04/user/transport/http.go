@@ -7,7 +7,11 @@ import (
 	"net/http"
 	"os"
 
+<<<<<<< HEAD
 	"github.com/Xia-Jialin/Go-000/Week04/user/endpoint"
+=======
+	"github.com/cty898/Go-000/Week04/user/endpoint"
+>>>>>>> ee315abcb790869e30fe090de1f8ea2ef5d6413e
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/transport"
 	kithttp "github.com/go-kit/kit/transport/http"

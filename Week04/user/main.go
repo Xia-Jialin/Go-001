@@ -11,6 +11,7 @@ import (
 	"strconv"
 	"syscall"
 
+<<<<<<< HEAD
 	"github.com/Xia-Jialin/Go-000/Week04/user/dao"
 	"github.com/Xia-Jialin/Go-000/Week04/user/endpoint"
 	"github.com/Xia-Jialin/Go-000/Week04/user/redis"
@@ -18,6 +19,14 @@ import (
 )
 
 //NewUserEndpoints New User Endpoints
+=======
+	"github.com/cty898/Go-000/Week04/user/dao"
+	"github.com/cty898/Go-000/Week04/user/endpoint"
+	"github.com/cty898/Go-000/Week04/user/redis"
+	"github.com/cty898/Go-000/Week04/user/service"
+)
+
+>>>>>>> ee315abcb790869e30fe090de1f8ea2ef5d6413e
 func NewUserEndpoints(userService service.UserService) *endpoint.UserEndpoints {
 	userEndpoints := &endpoint.UserEndpoints{
 		RegisterEndpoint: endpoint.MakeRegisterEndpoint(userService),
