@@ -24,8 +24,8 @@ func main() {
 	defer cancel()
 
 	// 监听sig信号
-	c := make(chan os.Signal, 1)
-	signal.Notify(c, syscall.SIGHUP, syscall.SIGQUIT, syscall.SIGTERM, syscall.SIGINT)
+	quit := make(chan os.Signal, 1)
+	signal.Notify(quit, syscall.SIGHUP, syscall.SIGQUIT, syscall.SIGTERM, syscall.SIGINT)
 	go func(c chan (os.Signal)) {
 		for {
 			select {
@@ -37,7 +37,7 @@ func main() {
 				}
 			}
 		}
-	}(c)
+	}(quit)
 
 	g, _ := errgroup.WithContext(ctx)
 	// 启动http1
